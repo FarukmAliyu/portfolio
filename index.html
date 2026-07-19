@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Faruk Muktar | Portfolio</title>
+  <title>Faruk Muktar Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -17,52 +17,51 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
 
-<style>
-/* Typing Animation */
-#typing-animation {
-  position: relative;
-  font-size: 28px;
-  font-weight: bold;
-  color: #ffffff;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid #ffbd39;
-  animation: typing 3.5s steps(30, end) infinite;
-}
+  <style>
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
+    .skill-mf .progress {
+      margin: .5rem 0 1.2rem 0;
+      border-radius: 0;
+      height: .7rem;
+    }
+    .skill-mf .progress .progress-bar {
+      height: .7rem;
+      background-color: #ffbd39;
+    }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+    /* Typing Animation */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+    }
 
-/* Project Hover Effect */
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.4s ease;
-}
-.zoom-effect:hover {
-  transform: scale(1.08);
-}
-
-/* Progress Bar */
-.skill-mf .progress {
-  height: 7px;
-  background-color: #e9ecef;
-  border-radius: 0;
-  margin: 0.6rem 0;
-}
-.skill-mf .progress-bar {
-  background-color: #ffbd39;
-}
-</style>
+    /* Project Zoom Effect */
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+    .zoom-effect:hover {
+      transform: scale(1.08);
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-  <!-- Navbar -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Faruk Muktar</a>
-      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+      <a class="navbar-brand" href="index.html">Faruk Muktar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
@@ -77,23 +76,22 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home-section" class="hero">
     <div class="home-slider owl-carousel">
       <div class="slider-item">
         <div class="overlay"></div>
         <div class="container">
           <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
-            <div class="one-third js-fullheight order-md-last img" style="background-image: url('images/aliyufarooq.png.jpg');"></div>
+            <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/aliyufarooq.png.jpg);"></div>
             <div class="one-forth d-flex align-items-center ftco-animate">
               <div class="text">
                 <span class="subheading">Hello!</span>
                 <h1 class="mb-4 mt-3">I'm <span>Faruk Muktar</span></h1>
                 <span id="typing-animation"></span>
-                <br><br>
                 <p>
-                  <a href="https://x.com/Faruk__Muktar" class="btn btn-primary py-3 px-4">Twitter</a>
-                  <a href="https://github.com/FarukmAliyu" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+                  <a href="https://www.x.com/@Faruk__muktar" class="btn btn-primary py-3 px-4">Twitter</a>
+                  <a href="https://github.com/FarukmAliyu" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
                 </p>
               </div>
             </div>
@@ -103,30 +101,17 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     <div class="container">
-      <div class="row">
+      <div class="row d-flex">
         <div class="col-md-6 col-lg-5 d-flex">
           <div class="img-about img d-flex align-items-stretch">
-            <div class="overlay">
-              <div class="row">
-                <div class="col-sm-6 col-md-5">
-                  <div class="about-img">
-                    <img src="images/1714893617478.png.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-7">
-                  <div class="about-info">
-                    <p><span class="title-s">Name:</span> <span>Faruk Muktar</span></p>
-                    <p><span class="title-s">Address:</span> <span>Kaduna, Nigeria</span></p>
-                  </div>
-                </div>
-              </div>
+            <div class="about-img">
+              <img src="images/1714893617478.png.jpg" class="img-fluid" alt="">
             </div>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
           <div class="row justify-content-start pb-3">
             <div class="col-md-12 heading-section ftco-animate">
@@ -134,34 +119,12 @@
               <h2 class="mb-4">About Me</h2>
               <p>Website Designer and Web Developer passionate about creating clean, responsive, and user-friendly digital experiences.</p>
               <ul class="about-info mt-4 px-md-0 px-2">
-                <li class="d-flex"><span>Profile:</span> <span>Mobile &amp; Web Development</span></li>
+                <li class="d-flex"><span>Profile:</span> <span>Mobile Application Development &amp; Web Design & Development</span></li>
                 <li class="d-flex"><span>Education:</span> <span>Computer Science</span></li>
                 <li class="d-flex"><span>Language:</span> <span>English</span></li>
+                <li class="d-flex"><span>Other Skills:</span> <span>React.js, Node.js, SQL</span></li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume / Experience -->
-  <section class="ftco-section" id="resume-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-7 text-center heading-section ftco-animate">
-          <h1 class="big">Experience</h1>
-          <h2>Experience</h2>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="resume-wrap ftco-animate">
-            <span class="date">2025 - Present</span>
-            <h2>Communications Officer (Remote)</h2>
-            <span class="position">Microdevelopment Consulting Ltd (MDCL)</span>
-            <p>Managed social media, created content, and promoted programs supporting women farmers.</p>
           </div>
         </div>
       </div>
@@ -171,39 +134,76 @@
   <!-- Projects -->
   <section class="ftco-section" id="project-section">
     <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-7 text-center heading-section ftco-animate">
-          <h1 class="big">Projects</h1>
-          <h2>Projects</h2>
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Projects</h1>
+          <h2 class="mb-4">Projects</h2>
         </div>
       </div>
-
-      <div class="row">
-        <!-- Project Cards -->
-        <div class="col-md-4">
+      <div class="row d-flex">
+        <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry justify-content-end">
             <a href="https://www.figma.com/design/LYVQzrhw6drpztsiIU2RhX/food-delivery-app" class="block-20 zoom-effect" style="background-image: url('images/Screenshot 2026-07-19 at 09.04.33.png');"></a>
-            <div class="text mt-3">
-              <h3><a href="#">Food Delivery App</a></h3>
-              <p>Modern food delivery mobile application prototype.</p>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="https://www.figma.com/design/LYVQzrhw6drpztsiIU2RhX/food-delivery-app">Food Delivery App</a></h3>
+              <p>The Food Delivery App is a modern and user-centered mobile application prototype...</p>
             </div>
           </div>
         </div>
-        <!-- Add more project cards as needed -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="https://kodekamp-initiative-81vg-git-main-farukmaliyus-projects.vercel.app" class="block-20 zoom-effect" style="background-image: url('images/Screenshot 2025-07-03 at 06.52.02~2.jpg');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="https://kodekamp-initiative-81vg-git-main-farukmaliyus-projects.vercel.app">Kodekamp Initiative Website</a></h3>
+              <p>Beautifully designed using React.js with radiant colors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry">
+            <a href="#" class="block-20 zoom-effect" style="background-image: url('images/Screenshot 2026-03-11 at 23.11.54.png');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="#">AGROAI</a></h3>
+              <p>AGROAI is an intelligent web application that leverages artificial intelligence and computer vision to support modern farming.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="ftco-section contact-section" id="contact-section">
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-7 text-center heading-section ftco-animate">
-          <h1 class="big">Contact</h1>
-          <h2>Contact Me</h2>
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Contact</h1>
+          <h2 class="mb-4">Contact Me</h2>
         </div>
       </div>
-      <!-- Your contact details -->
+      <div class="row d-flex contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
+            <h3 class="mb-4">Address</h3>
+            <p>Kaduna, Nigeria</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
+            <h3 class="mb-4">Contact Number</h3>
+            <p><a href="tel://08051216661">08051216661</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
+            <h3 class="mb-4">Email Address</h3>
+            <p><a href="mailto:farukmuktaraliyu@gmail.com">farukmuktaraliyu@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -212,39 +212,49 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p>© 2026 Faruk Muktar. All Rights Reserved.</p>
+          <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Faruk Muktar. All rights reserved.</p>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
 
+  <!-- Typing Animation -->
   <script>
-  // Typing Animation
-  const typingElement = document.getElementById('typing-animation');
-  const texts = ["Web Developer", "Mobile App Designer", "Tech Enthusiast"];
-  let count = 0;
-  let index = 0;
-  let currentText = '';
-  let letter = '';
+    const typingElement = document.getElementById('typing-animation');
+    const texts = ["Web Developer", "Mobile App Designer", "Tech Enthusiast"];
+    let index = 0;
 
-  function type() {
-    if (count === texts.length) count = 0;
-    currentText = texts[count];
-    letter = currentText.slice(0, ++index);
-
-    typingElement.textContent = letter;
-    if (letter.length === currentText.length) {
-      count++;
-      index = 0;
-      setTimeout(type, 2000);
-    } else {
-      setTimeout(type, 80);
+    function type() {
+      typingElement.textContent = '';
+      let i = 0;
+      const interval = setInterval(() => {
+        typingElement.textContent += texts[index][i];
+        i++;
+        if (i === texts[index].length) {
+          clearInterval(interval);
+          setTimeout(() => {
+            index = (index + 1) % texts.length;
+            type();
+          }, 2000);
+        }
+      }, 100);
     }
-  }
-  type();
+    type();
   </script>
 </body>
 </html>
